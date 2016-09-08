@@ -1,0 +1,48 @@
+// ams colors
+$dark-navy: #0D182E;
+$medium-navy: #1B283E;
+$light-navy: #1A2E4B;
+$aux: #8693B7;
+$border: #4A5A70;
+$light-blue: #AABDDD;
+$light-grey: #E5E5E5;
+$medium-blue: #1D2A42;
+$gray-blue: #94A8B9;
+
+// colors
+$blue: #00CDFF;
+$green: #49ECA6;
+$pink: #DE2570;
+$neutral: #1F515B;
+
+
+// base colors
+$white: #FFFFFF;
+$black: #000000;
+$offwhite: #F5F6F7;
+
+// actionables
+$actionable: #00EAFF;
+$actionable-dark: #07A8D3;
+
+// text colors
+$dark: #2B2B2B;
+$body: #50607E;
+$trans-white: rgba(255, 255, 255, 0.5);
+
+// efficiency graph circles
+$bluecircle: #1A96D9;
+$greencircle: #00E373;
+$redcircle: #E20055;
+
+// gradient mixin
+@mixin gradient($angle, $from, $to) {
+  // fallback/image non-cover color
+  background-color: $from;
+
+  @if $angle == 'horizontal' {
+    background: linear-gradient(to right, $from 0%, $to 100%);
+  } @else if $angle == 'vertical' {
+    background: linear-gradient(to bottom, $from 0%, $to 100%);
+  }
+}

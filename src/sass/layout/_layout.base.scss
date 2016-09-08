@@ -1,0 +1,31 @@
+.layout--left {
+  float: left;
+}
+
+.layout--right {
+  float: right;
+}
+
+.layout--top {
+  vertical-align: top;
+}
+
+// clearfix
+.cf {
+  clear: both;
+}
+
+.cf:before,
+.cf:after {
+  content: '';
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.layout--flex {
+  display: flex;
+  align-items: center;
+}
